@@ -5,7 +5,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\utils\TextFormat as TF;
 use BrawlTDM\Main;
-class commands{
+class Commands{
 	
 	private $plugin;
 	
@@ -33,13 +33,13 @@ class commands{
 					$sender->sendMessage(TF::GREEN."Configs reloaded!");
 				}
 				if($args[0] === "help"){
-					$sender->sendMessage(TF::RED."--------".TF::DARK_PURPLE."TeamDeathMatch".TF::RED."--------\n".TF::GOLD."BrawlTDM plugin by EnderBoxie and Epicrafter60".TF::AQUA."(Twitter @EnderBoxie and @Epicrafter60)");
+					$sender->sendMessage(TF::RED."--------".TF::DARK_PURPLE."BrawlTDM".TF::RED."--------\n".TF::GOLD."BrawlTDM plugin by EnderBoxie and Epicrafter60".TF::AQUA."(Twitter @EnderBoxie and @Epicrafter60)");
 					$sender->sendMessage(TF::GREEN."/btdm set [arena name]");
 					$sender->sendMessage(TF::GREEN."/btdm reload");
 					$sender->sendMessage(TF::RED."------------------------------");
 				}
 			}else{
-					$sender->sendMessage(TF::RED."--------".TF::DARK_PURPLE."TeamDeathMatch".TF::RED."--------\n".TF::GOLD."BrawlTDM plugin by EnderBoxie and Epicrafter60".TF::AQUA."(Twitter @EnderBoxie and @Epicrater_60)")
+					$sender->sendMessage(TF::RED."--------".TF::DARK_PURPLE."BrawlTDM".TF::RED."--------\n".TF::GOLD."BrawlTDM plugin by EnderBoxie and Epicrafter60".TF::AQUA."(Twitter @EnderBoxie and @Epicrater_60)")
 					$sender->sendMessage(TF::GREEN."/btdm set [arena name]");
 					$sender->sendMessage(TF::GREEN."/btdm reload");
 					$sender->sendMessage(TF::RED."------------------------------");
