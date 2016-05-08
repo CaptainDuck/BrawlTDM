@@ -4,7 +4,7 @@ use pocketmine\scheduler\PluginTask;
 use pocketmine\plugin\Plugin;
 use pocketmine\Player;
 use BrawlTDM\Main;
-class scorefetcher extends PluginTask{
+class GameTask extends PluginTask{
 private $plugin;
 	
 	public function __construct(Main $plugin){
