@@ -4,8 +4,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\utils\TextFormat as TF;
-use TeamDeathMatch\Main;
-class Commands{
+use BrawlTDM\Main;
+class commands{
 	
 	private $plugin;
 	
@@ -16,7 +16,7 @@ class Commands{
 		$this->areans = $this->plugin->areans;
 	}
 	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-		if(strtolower($cmd->getName()) === "tdm"){
+		if(strtolower($cmd->getName()) === "btdm"){
 			if(isset($args[0])){
 				if($args[0] === "set"){
 					if(isset($args[1])){
