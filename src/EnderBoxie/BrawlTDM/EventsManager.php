@@ -4,7 +4,7 @@ use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\event\player\PlayerInteractEvent;
-use TeamDeathMatch\Main;
+use BrawlTDM\Main;
 use pocketmine\utils\TextFormat as TF;
 class EventsManager implements Listener{
 	
