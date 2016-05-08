@@ -27,13 +27,13 @@ public function onEnable(){
 	$this->maps[$m] = $this->settings->get("game-time");	
 	}
 	echo var_dump($this->maps);
-	$this->getServer()->getLogger()->info("[TeamDeathMatch]Loaded");
+	$this->getServer()->getLogger()->info("[BrawTDM]Loaded");
 	$this->getServer()->getPluginManager()->registerEvents(new EventsManager($this),$this);
 	$this->getServer()->getScheduler()->scheduleRepeatingTask(new GameTask($this),20); 
 	$this->commands = new Commands($this);
 }
 public function onDisable(){
-	$this->getServer()->getLogger()->info("[TeamDeathMatch]Disabled!");
+	$this->getServer()->getLogger()->info("[BrawlTDM]Disabled!");
 	$this->settings->save();
 }
 public function giveItems(Player $player){
